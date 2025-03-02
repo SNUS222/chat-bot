@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Видео фон -->
+    <div class="video-background">
+        <video id="background-video" autoplay muted loop>
+            <!-- 
+            ИНСТРУКЦИЯ: Замените "videos/your-video.mp4" на путь к вашему видео файлу.
+            Например:
+            - Если видео находится в папке videos: "videos/background.mp4"
+            - Если видео находится в корневой папке: "background.mp4"
+            -->
+            <source src="E:\wefrrtukymjhngbfvf\videos\1.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="container">
+        <div class="chat-header">
+            <div class="logo">
+                <div class="bot-avatar-container">
+                    <!-- 
+                    ИНСТРУКЦИЯ: Замените "videos/avatar.mp4" на путь к видео для аватарки.
+                    Или оставьте класс "icon-avatar" для использования иконки вместо видео.
+                    -->
+                    <video id="bot-avatar-video" class="bot-avatar-video" autoplay muted loop>
+                        <source src="E:\wefrrtukymjhngbfvf\videos\avatar.mp4" type="video/mp4">
+                    </video>
+                    <i class="fas fa-robot icon-avatar"></i>
+                </div>
+                <h1>ORACLE AI Chat </h1>
+            </div>
+            <div class="theme-toggle" title="Сменить тему">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="avatar">
+                        <div class="bot-avatar-container message-avatar-container">
+                            <video class="bot-avatar-video message-avatar-video" autoplay muted loop>
+                                <source src="videos/avatar.mp4" type="video/mp4">
+                            </video>
+                            <i class="fas fa-robot icon-avatar"></i>
+                        </div>
+                    </div>
+                    <div class="message-content">
+                        <p>Привет! ORACLE AI Chat. Чем я могу вам помочь сегодня?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <textarea id="user-input" placeholder="Напишите ваше сообщение..." rows="1"></textarea>
+                <button id="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
